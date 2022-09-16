@@ -1,0 +1,240 @@
+body {
+  padding: 100px;
+  margin: 0;
+  background-color: #f5f6fa;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 0;
+}
+
+.app {
+  background-color: hsl(0, 0%, 98%);
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.938rem;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu p {
+  font-size: 1.875rem;
+  color: #0290ff;
+  font-weight: bold;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.nav-menu ul li a {
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.userIconCont {
+  width: 2.813rem;
+  height: 2.813rem;
+  margin: 0 0 0 41.5rem;
+  padding: 0.8rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booksContainer {
+  position: absolute;
+  padding: 100px 100px 150px;
+  width: inherit;
+}
+
+form h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.form-control {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 7fr 3fr 2fr;
+  gap: 20px;
+}
+
+.form-control button {
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.form-control input {
+  padding: 15px 10px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  color: #121212;
+  font-size: 15px;
+}
+
+.bookLists {
+  list-style: none;
+  padding: 0;
+}
+
+.bookLists > li {
+  padding: 30px;
+  width: 80%;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 0;
+}
+
+.list-action-btns {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.list-action-btns li {
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.bookLists .title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  padding: 0;
+}
+
+.bookLists .author {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.chart {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-style: solid;
+  border-width: 5px;
+  border-color: linear-gradient(to bottom, #307bbe, #379cf6);
+  border-image-slice: 1;
+  border-radius: 50%;
+}
+
+.completion-status {
+  display: flex;
+  border-right: 1px solid #e8e8e8;
+  align-items: center;
+  gap: 20px;
+}
+
+.chapter-section {
+  margin-left: 100px;
+}
+
+.chapter-section p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter-section button{
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.categoriesContainer {
+  position: absolute;
+  padding: 100px 100px 150px;
+  width: 100%;
+}
+
+.categoriesContainer button {
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
