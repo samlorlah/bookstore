@@ -1,11 +1,11 @@
 // Actions
-const CHECK_STATUS = 'CHECK_STATUS';
+const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
 // Reducer
 const categoriesReducers = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return ['Under Contruction'];
+      return 'Under Contruction';
     default:
       return state;
   }

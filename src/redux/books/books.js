@@ -1,6 +1,6 @@
 // Actions
-const ADD_BOOK = 'ADD_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 const booksReducers = (state = [], action) => {
   switch (action.type) {
@@ -9,8 +9,14 @@ const booksReducers = (state = [], action) => {
   }
 };
 
-export const addBook = () => ({ type: ADD_BOOK });
+export const addBook = (payload) => ({
+  type: ADD_BOOK,
+  payload,
+});
 
-export const removeBook = () => ({ type: REMOVE_BOOK });
+export const removeBook = (payload) => ({
+  type: REMOVE_BOOK,
+  payload,
+});
 
 export default booksReducers;
