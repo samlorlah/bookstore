@@ -26,7 +26,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 5.938rem;
-  margin: 0 0 2.375rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: #fff;
 }
@@ -72,9 +71,12 @@ nav {
 }
 
 .booksContainer {
-  position: absolute;
-  padding: 100px 100px 150px;
-  width: inherit;
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form h3 {
@@ -120,17 +122,21 @@ form h3 {
 .bookLists {
   list-style: none;
   padding: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .bookLists > li {
   padding: 30px;
-  width: 80%;
+  width: 100%;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 20px 0;
 }
 
 .list-action-btns {
@@ -139,7 +145,8 @@ form h3 {
   padding: 0;
 }
 
-.list-action-btns li {
+.list-action-btns li,
+.list-action-btns li button {
   font-size: 12px;
   font-weight: 300;
   font-stretch: normal;
