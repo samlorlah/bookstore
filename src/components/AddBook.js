@@ -17,7 +17,16 @@ const AddBook = ({ handleSubmit }) => {
 
   const handleSubmitBook = (e) => {
     e.preventDefault();
-    handleSubmit({ ...newBook, category });
+    if (newBook.title && newBook.author) {
+      handleSubmit({ ...newBook, category });
+      setNewBook({
+        ...newBook,
+        item_id: '',
+        title: '',
+        author: '',
+        category: '',
+      });
+    }
   };
 
   return (
