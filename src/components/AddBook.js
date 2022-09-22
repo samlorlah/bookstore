@@ -1,23 +1,32 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import PropTypes from 'prop-types';
 
-const AddBook = () => {
-  const dispatch = useDispatch();
-
+const AddBook = ({ handleSubmit }) => {
+  const bookCategories = ['Fiction', 'Classics', 'Mystery', 'Contemporary'];
+  const rand = Math.floor(Math.random() * bookCategories.length);
+  const category = bookCategories[rand];
   const [newBook, setNewBook] = useState(
     {
-      id: '',
+      item_id: uuidv4(),
       title: '',
       author: '',
+      category: '',
     },
   );
 
   const handleSubmitBook = (e) => {
     e.preventDefault();
-    setNewBook({ ...newBook, id: uuidv4 });
-    dispatch(addBook(newBook));
+    if (newBook.title && newBook.author) {
+      handleSubmit({ ...newBook, category });
+      setNewBook({
+        ...newBook,
+        item_id: '',
+        title: '',
+        author: '',
+        category: '',
+      });
+    }
   };
 
   return (
@@ -40,6 +49,10 @@ const AddBook = () => {
       </div>
     </form>
   );
+};
+
+AddBook.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
 };
 
 export default AddBook;
