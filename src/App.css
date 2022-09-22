@@ -91,7 +91,7 @@ form h3 {
 }
 
 .form-control {
-  width: 80%;
+  width: 100%;
   display: grid;
   grid-template-columns: 7fr 3fr 2fr;
   gap: 20px;
