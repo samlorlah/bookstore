@@ -80,6 +80,10 @@ nav {
   align-items: center;
 }
 
+form {
+  width: 84%;
+}
+
 form h3 {
   font-size: 1.25rem;
   font-weight: bold;
@@ -118,6 +122,7 @@ form h3 {
   background-color: #fff;
   color: #121212;
   font-size: 15px;
+  margin: 0;
 }
 
 .bookLists {
