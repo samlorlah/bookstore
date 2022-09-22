@@ -12,7 +12,7 @@ const BooksContainer = () => {
   return (
     <div className="booksContainer">
       <BookLists />
-      <div style={{ width: '80%', border: 'solid 1px #e8e8e8', margin: '50px 0' }} />
+      <div style={{ width: '85%', border: 'solid 1px #e8e8e8', margin: '50px 0' }} />
       <AddBook handleSubmit={handleSubmit} />
     </div>
   );

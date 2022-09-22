@@ -6,15 +6,13 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="app">
-      <Router>
-        <Nav />
-        <Routes>
-          <Route exact path="/" element={<BooksContainer />} />
-          <Route path="/categories" element={<CategoriesContainer />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<BooksContainer />} />
+        <Route path="/categories" element={<CategoriesContainer />} />
+      </Routes>
+    </Router>
   );
 }
 
