@@ -37,7 +37,7 @@ const BookListItem = ({ id, title, author }) => {
 BookListItem.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default BookListItem;
